@@ -11,7 +11,7 @@ function App() {
   const[term,setTerm] = useState('')
 
   useEffect(() => {
-    fetch(`https://pixabay.com/api/?key=YOUR_API_KEY&q=${term}&image_type=photo&pretty=true`)
+    fetch(`https://pixabay.com/api/?key=17778018-a13f9ec96a128b6260c2cdbd6&q=${term}&image_type=photo&pretty=true`)
     .then(res => res.json())
     .then(data => {
       setImages(data.hits);
